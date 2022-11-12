@@ -17,7 +17,7 @@ public class LoginService {
         String username = input.nextLine();
         System.out.print("Mật khẩu  00000001: ");
 //        String password = input.nextLine();
-        boolean check = true;
+        boolean check = false;
         if(!iUserReponsitory.findUserByUserNameAndPassword(username,password).checkExits()
                 && 1 == iUserReponsitory.findUserByUserNameAndPassword(username,password).getRole()){
             while (check == true){
