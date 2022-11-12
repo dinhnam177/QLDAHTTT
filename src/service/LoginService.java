@@ -13,9 +13,9 @@ public class LoginService {
         IUserReponsitory iUserReponsitory = new UserRepository();
         IDonateReponsitory iDonateReponsitory = new DonateRepository();
         Scanner input = new Scanner(System.in);
-        System.out.print("Tài khoản 0123: ");
+        System.out.print("Tài khoản 2315461: ");
         String username = input.nextLine();
-        System.out.print("Mật khẩu  0123: ");
+        System.out.print("Mật khẩu  132156423: ");
         String password = input.nextLine();
         boolean check = true;
         if(!iUserReponsitory.findUserByUserNameAndPassword(username,password).checkExits()
